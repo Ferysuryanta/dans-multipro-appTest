@@ -7,14 +7,20 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-public class LoginRequest {
+public class SignUp {
+    private Long id;
+    @NotBlank
+    private String name;
+
     @NotBlank
     @Email
     private String email;
 
     @NotBlank
     private String password;
+
+
 }

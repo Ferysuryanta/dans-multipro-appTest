@@ -2,8 +2,8 @@ package com.dans.multipro.test.controller;
 
 import javax.validation.Valid;
 
-import com.dans.multipro.test.dto.LoginRequest;
-import com.dans.multipro.test.dto.SignUpRequest;
+import com.dans.multipro.test.dto.Login;
+import com.dans.multipro.test.dto.SignUp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,12 +22,12 @@ public class AuthController {
     private AuthService authService;
 
     @PostMapping("/login")
-    public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
+    public ResponseEntity<?> authenticateUser(@Valid @RequestBody Login loginRequest) {
         return ResponseEntity.ok(authService.loginProcess(loginRequest));
     }
 
     @PostMapping("/signup")
-    public ResponseEntity<?> registerUser(@Valid @RequestBody SignUpRequest signUpRequest) {
+    public ResponseEntity<?> registerUser(@Valid @RequestBody SignUp signUpRequest) {
         return ResponseEntity.created(authService.signupProcess(signUpRequest))
                 .body(new ApiResponse("User registered successfully"));
     }

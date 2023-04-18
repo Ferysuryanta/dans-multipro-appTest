@@ -4,8 +4,8 @@ import java.net.URI;
 import java.util.Optional;
 
 import com.dans.multipro.test.dto.AuthResponse;
-import com.dans.multipro.test.dto.LoginRequest;
-import com.dans.multipro.test.dto.SignUpRequest;
+import com.dans.multipro.test.dto.Login;
+import com.dans.multipro.test.dto.SignUp;
 import com.dans.multipro.test.exeption.BadRequestException;
 import com.dans.multipro.test.model.User;
 import com.dans.multipro.test.repository.UserRepository;
@@ -33,7 +33,7 @@ public class AuthService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    public AuthResponse loginProcess( LoginRequest loginRequest) {
+    public AuthResponse loginProcess( Login loginRequest) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         loginRequest.getEmail(),
@@ -54,7 +54,7 @@ public class AuthService {
                 .build();
     }
 
-    public URI signupProcess( SignUpRequest signUpRequest) {
+    public URI signupProcess( SignUp signUpRequest) {
         if (userRepository.existsByEmail(signUpRequest.getEmail())) {
             throw new BadRequestException ("Email address already in use.");
         }
