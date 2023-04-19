@@ -33,11 +33,7 @@ CREATE TABLE `users` (
 /*Data for the table `users` */
 
 insert  into `users`(`id`,`name`,`password`,`role`,`email`) values 
-(1,'Test','$2a$10$tCWTi55rVE3T9bNVpAPQoONcK6zgb7iMeDgb49imXvTZON5GUo/bG','ROLE_USER','Test@gmail.com'),
+(1,'Test','$2a$10$tCWTi55rVE3T9bNVpAPQoONcK6zgb7iMeDgb49imXvTZON5GUo/bG','ROLE_USER','test1@gmail.com'),
 (2,'TestApp','$2a$10$utvyhuCpvYqU5do6aXB5U.vtAQLeZf7J/rzu5WKy26an.aW9WwVoW','ROLE_USER','TestApp@gmail.com'),
 (3,'TestApp1','$2a$10$xeZNZCwJ3kKKbPaVVnqACePFqZcIRIomKK1B3tK76N26YACTDzEBW','ROLE_USER','TestApp1@gmail.com');
 
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
