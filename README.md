@@ -13,7 +13,3 @@
 
 ### With Token
 ![image](https://user-images.githubusercontent.com/107397075/233095446-4f38083f-224b-4b48-8a3c-8b0628e2db03.png)
-
-
-## Jwt 
-![62-3-min](https://user-images.githubusercontent.com/28156593/231339486-19ba9b00-1d67-4048-b6bc-51ba8ef2e9bc.jpeg)
