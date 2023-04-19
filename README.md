@@ -2,17 +2,17 @@
 
 ## List Job 
 ### No Token
-![image](https://user-images.githubusercontent.com/28156593/228449265-cd5be306-0193-4db8-be8e-ab52f72a2943.png)
+![image](https://user-images.githubusercontent.com/107397075/233095723-153121c5-0bf9-4d1d-b938-a4910230e363.png)
 
 ### With Token
-![image](https://user-images.githubusercontent.com/28156593/228449355-85732497-f3ab-406c-9e33-2098615c17ee.png)
+![image](https://user-images.githubusercontent.com/107397075/233095609-ea99f1ae-1df6-4337-965d-9ae363f83632.png)
 
 ## Job By ID
 ### No Token
-![image](https://user-images.githubusercontent.com/28156593/228449642-70794f9a-ff11-4f20-bfcb-88d9e5049ef2.png)
+!![image](https://user-images.githubusercontent.com/107397075/233095217-ebd6d751-809a-4092-a37f-f87666496b54.png)
 
 ### With Token
-![image](https://user-images.githubusercontent.com/28156593/228449843-6bcda81b-94f0-45a3-98c5-597ab50ec5ff.png)
+![image](https://user-images.githubusercontent.com/107397075/233095446-4f38083f-224b-4b48-8a3c-8b0628e2db03.png)
 
 
 ## Jwt 
