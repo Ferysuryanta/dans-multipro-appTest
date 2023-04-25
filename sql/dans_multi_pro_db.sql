@@ -1,24 +1,15 @@
-/*
-SQLyog Community v13.2.0 (64 bit)
-MySQL - 10.4.27-MariaDB : Database - dans_multi_pro_db
-*********************************************************************
-*/
+-- Database: dans-multipro-test
 
-/*!40101 SET NAMES utf8 */;
+-- DROP DATABASE IF EXISTS "dans-multipro-test";
 
-/*!40101 SET SQL_MODE=''*/;
-
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`dans_multi_pro_db` /*!40100 DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci */;
-
-USE `dans_multi_pro_db`;
-
-/*Table structure for table `users` */
-
-DROP TABLE IF EXISTS `users`;
+CREATE DATABASE "dans-multipro-test"
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_United States.1252'
+    LC_CTYPE = 'English_United States.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
 
 CREATE TABLE `users` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -28,7 +19,7 @@ CREATE TABLE `users` (
   `email` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UK6dotkott2kjsp8vw4d0m25fb7` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+);
 
 /*Data for the table `users` */
 

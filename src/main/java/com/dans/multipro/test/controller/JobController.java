@@ -22,15 +22,6 @@ public class JobController {
     public Object listJob() {
 
         List<JobDto> listJob = jobFeign.getListJob();
-//        Map<String,List<JobDto>> tamp = new HashMap<>();
-//        for (JobDto jobDto : listJob) {
-//
-//            if(!tamp.containsKey(jobDto.getLocation())){
-//                tamp.put(jobDto.getLocation(), new ArrayList<>());
-//            }
-//
-//            tamp.get(jobDto.getLocation()).add(jobDto);
-//        }
         return listJob;
     }
 
